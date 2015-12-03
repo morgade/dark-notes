@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="pref_captureMethod_entries">
+        <item>@string/capture_per_gesture</item>
+        <item>@string/capture_per_ws_lb_gesture</item>
+        <item>@string/multi_touch_guided_capture</item>
+    </array>
+    
+    <array name="pref_captureMethod_values">
+        <item>CAPTURE_PER_GESTURE</item>
+        <item>CAPTURE_PER_WHITESPACE_LINEBREAK</item>
+        <item>MULTITOUCH_CAPTURE</item>
+    </array>
+    
+    <array name="pref_captureVisualStyles_entries">
+        <item>@string/no_visual</item>
+        <item>@string/light_visual</item>
+        <item>@string/dark_visual</item>
+    </array>
+    
+    <array name="pref_captureVisualStyles_values">
+        <item>NONE</item>
+        <item>LIGHT</item>
+        <item>DARK</item>
+    </array>
+</resources>

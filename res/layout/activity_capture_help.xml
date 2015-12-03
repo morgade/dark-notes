@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/writing_notes"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="@string/writing_notes_text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_per_gesture"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_per_gesture_help"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="@dimen/image_help_dimension"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/letter_a_ok" />
+
+            <ImageView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="@dimen/image_help_dimension"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/letter_t_ok" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="@dimen/image_help_dimension"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/letter_a_nok" />
+
+            <ImageView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="@dimen/image_help_dimension"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/letter_t_nok" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/whitespaces_and_linebreaks"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a_whitespace_or_linebreak_gesture_is_required_to_register_the_current_word"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="@dimen/image_help_dimension"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/cature_help_image_background"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/whitespace" />
+
+            <ImageView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="@dimen/image_help_dimension"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/cature_help_image_background"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/linebreak" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/whitespace"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="@dimen/image_help_dimension"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/linebreak"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/capture_per_ws_lb_gesture"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_per_ws_lb_help"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="@dimen/image_help_dimension"
+                android:layout_weight="1"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/word" />
+
+            <ImageView
+                android:layout_width="0px"
+                android:layout_height="@dimen/image_help_dimension"
+                android:layout_weight="1"
+                android:contentDescription="@string/capture_warning"
+                android:src="@drawable/whitespace" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/write_word"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/whitespace"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/word_detection"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_word_detection_help"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:layout_width="@dimen/image_help_dimension"
+            android:layout_height="@dimen/image_help_dimension"
+            android:layout_gravity="center"
+            android:background="@drawable/cature_help_image_background"
+            android:contentDescription="@string/capture_warning"
+            android:src="@drawable/word_detect" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/multi_touch_guided_capture"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multi_touch_guided_capture_help"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:layout_width="@dimen/image_help_dimension"
+            android:layout_height="@dimen/image_help_dimension"
+            android:layout_gravity="center"
+            android:contentDescription="@string/capture_warning"
+            android:background="@drawable/cature_help_image_background"
+            android:src="@drawable/word2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/multi_touch_guided_capture_write"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/vibration_feedback"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vibration_feedback_help"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.morgadesoft.darknotes"
+    android:versionCode="3"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <supports-screens android:anyDensity="true"
+        			  android:smallScreens="true" 
+        			  android:normalScreens="true" 
+        			  android:largeScreens="true" 
+        			  android:xlargeScreens="true" />
+    
+    <uses-configuration android:reqTouchScreen="finger" />
+    <uses-configuration android:reqTouchScreen="stylus" />
+    
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.morgadesoft.darknotes.HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.morgadesoft.darknotes.NoteReviewActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name="com.morgadesoft.darknotes.NoteCaptureActivity"
+            android:label="@string/title_activity_note_capture" >
+        </activity>
+        
+        <activity
+            android:name="com.morgadesoft.darknotes.CaptureHelpActivity"
+            android:label="@string/capture_help" >
+            <intent-filter>
+           		<action android:name="com.morgadesoft.darknotes.CaptureHelpActivity" />
+           		<category android:name="android.intent.category.DEFAULT" />
+       		</intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.morgadesoft.darknotes.preferences.UserPreferencesActivity"
+            android:label="@string/settings" >
+        </activity>
+        
+        <provider
+            android:name="com.morgadesoft.darknotes.provider.DarkNotesContentProvider"
+            android:authorities="com.morgadesoft.darknotes.contentprovider"
+            android:exported="true"
+            android:permission="com.morgadesoft.darknotes.permission.NOTES_DATABASE" >
+        </provider>
+    </application>
+
+</manifest>

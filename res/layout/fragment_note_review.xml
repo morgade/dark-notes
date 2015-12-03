@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+      <ProgressBar
+          android:id="@+id/fragment_note_review_note_image_progress_note"
+          style="@style/ProgressBarStyle"
+          android:layout_width="match_parent"
+          android:layout_height="10dp"
+          android:max="50"
+          android:progress="12" />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <com.morgadesoft.darknotes.ui.NotePieceViewer
+            android:id="@+id/fragment_note_review_note_piece_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" />
+
+        <ProgressBar
+            android:id="@+id/fragment_note_review_note_progress_loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/fragment_note_review_note_text_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/note_complete_ntap_share_icon_at_top_bar_to_export"
+            android:drawableBottom="@drawable/ic_menu_share"
+            android:textColor="#ff000000"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+
+    </FrameLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/fragment_note_review_note_edit_text"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1"
+            android:ems="10"
+            android:hint="@string/type_writed_text_here">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/fragment_note_review_note_image_button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/next"
+            android:src="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/fragment_note_review_note_text_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_note"
+            android:textSize="30sp" />
+
+    </ScrollView>
+
+</LinearLayout>

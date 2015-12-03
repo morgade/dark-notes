@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="InconsistentLayout">
+
+    <FrameLayout
+        android:id="@+id/activity_home_frame_A"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/frame_a_margin"
+        android:background="@drawable/note_list_background" />
+    
+    
+    <FrameLayout
+        android:id="@+id/activity_home_frame_B" 
+        android:background="@drawable/fragment_note_detail_bg"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingBottom="@dimen/frame_b_margin"
+       	android:paddingLeft="@dimen/frame_b_margin"
+       	android:paddingRight="@dimen/frame_b_margin"
+       	android:paddingTop="@dimen/frame_b_margin" />
+
+</LinearLayout>

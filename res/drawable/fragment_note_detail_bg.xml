@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/actionBarStart"/>
+    </item>
+    <item android:left="1dp">
+        <shape android:shape="rectangle">
+            <gradient android:startColor="#FF444444" android:endColor="#FF111111" android:angle="90"/>
+        </shape>
+    </item>
+</layer-list>

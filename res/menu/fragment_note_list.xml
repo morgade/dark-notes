@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:androidv7="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_new_note"
+        android:icon="@drawable/ic_menu_add"
+        androidv7:showAsAction="ifRoom"
+        android:orderInCategory="10"
+        android:title="@string/new_note"/>
+
+</menu>

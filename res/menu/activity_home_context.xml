@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/activity_home_context_view"
+        android:title="@string/view"/>
+
+	<item
+        android:id="@+id/activity_home_context_delete"
+        android:title="@string/delete"/>
+	
+	<item
+        android:id="@+id/activity_home_context_render"
+        android:title="@string/render"/>
+	
+	<item
+        android:id="@+id/activity_home_context_review"
+        android:title="@string/review"/>
+</menu>

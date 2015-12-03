@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+<!--         <item name="isLightTheme">false</item> -->
+<!--          <item name="actionBarStyle">@style/NotesActionBar</item> -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:listViewStyle">@style/NotesListViewStyle</item>
+    </style>
+    
+        <!-- ActionBar styles -->
+    <style name="NotesActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/actionbar_background</item>
+        <item name="titleTextStyle">@style/NotesActionBarTitleTextStyle</item>
+    </style>
+    
+    <style name="NotesActionBarTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/actionBarText</item>
+    </style>
+    
+    <style name="NotesListViewStyle">
+        <item name="android:divider">@drawable/divider</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <style name="FormEditLabel">
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/label_border_bottom</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Small</item>
+    </style>
+
+	<style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_bar</item>
+    </style>
+    
+    <style name="ListItemRightArrowSelected">
+        <item name="android:drawableRight">@drawable/note_list_item_background</item>
+    </style>
+    
+</resources>

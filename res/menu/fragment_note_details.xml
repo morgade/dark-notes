@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:androidv7="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/fragment_note_details_action_capture" 
+        android:title="@string/start_note"
+        android:icon="@drawable/ic_menu_edit"
+        android:orderInCategory="1"
+		androidv7:showAsAction="ifRoom"/>
+    
+    <item
+        android:id="@+id/fragment_note_details_action_render" 
+        android:title="@string/render_note"
+        android:orderInCategory="22"
+        android:icon="@drawable/ic_menu_gallery"
+		androidv7:showAsAction="never"/>
+    
+   <item
+        android:id="@+id/fragment_note_details_action_review" 
+        android:title="@string/review"
+        android:orderInCategory="23" 
+        android:icon="@drawable/ic_menu_find"
+		androidv7:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/fragment_note_details_action_delete" 
+        android:title="@string/delete"
+        android:orderInCategory="24"
+        android:icon="@drawable/ic_menu_delete"
+		androidv7:showAsAction="never"/>
+
+</menu>

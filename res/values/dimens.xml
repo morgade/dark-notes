@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="list_item_left_padding">10dp</dimen>
+    <dimen name="frame_a_margin">10dp</dimen>
+    <dimen name="frame_b_margin">10dp</dimen>
+    <dimen name="image_help_dimension">125dp</dimen>
+
+    <dimen name="capture_text_help_size">10sp</dimen>
+</resources>

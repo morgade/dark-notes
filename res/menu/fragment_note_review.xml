@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:androidv7="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fragment_note_review_menu_share"
+        android:icon="@drawable/ic_menu_share"
+        androidv7:showAsAction="always"
+        android:title="@string/share_text"/>
+</menu>

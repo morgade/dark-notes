@@ -1,0 +1,13 @@
+<resources>
+    <color name="actionBarStart">#FFff8b36</color>
+    <color name="actionBarEnd">#FFf3822b</color>
+    <color name="actionBarStroke">#FFcc6416</color>
+    <color name="actionBarStartTransparent">#00ff8b36</color>
+    <color name="actionBarText">#FFFFFFFF</color>
+
+    <color name="backgroundDark">#FF444444</color>
+    <color name="bgNote1">#fffffe9e</color>
+    <color name="bgNote2">#ffe1e079</color>
+    
+    
+</resources>

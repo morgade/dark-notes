@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/capture_settings" >
+        <PreferenceScreen
+            android:summary="@string/capture_help_summary"
+            android:title="@string/capture_help" >
+            <intent android:action="com.morgadesoft.darknotes.CaptureHelpActivity" />
+        </PreferenceScreen>
+
+        <ListPreference
+            android:key="prefCaptureMethod"
+            android:defaultValue="@string/pref_captureMethod_default"
+            android:dialogTitle="@string/capture_method"
+            android:entries="@array/pref_captureMethod_entries"
+            android:entryValues="@array/pref_captureMethod_values"
+            android:title="@string/capture_method" />
+
+        <CheckBoxPreference
+            android:key="prefEnableCaptureByWordDetection"
+            android:defaultValue="true"
+            android:title="@string/enable_word_detection"
+            android:summary="@string/word_detection_summary" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="@string/capture_feedback" >
+        <CheckBoxPreference
+            android:key="prefEnableVibrationFeedback"
+            android:defaultValue="true"
+            android:title="@string/vibration_feedback"
+            android:summary="@string/vibrate_once_per_whitespace_and_twice_per_linebreak" />
+        
+        <CheckBoxPreference
+            android:key="prefEnableTheaterMode"
+            android:defaultValue="false"
+            android:title="@string/enable_theater_mode" 
+            android:summary="@string/theater_mode_summary"
+            android:disableDependentsState="true"/>
+        
+       	<CheckBoxPreference
+            android:key="prefKeepScreenOn"
+            android:defaultValue="false"
+            android:title="@string/keep_screen_on" 
+            android:summary="@string/keep_screen_on_summary"
+            android:dependency="prefEnableTheaterMode" />
+        
+        <ListPreference
+            android:key="prefCaptureVisualStyle"
+            android:defaultValue="@string/pref_captureVisualStyle_default"
+            android:dialogTitle="@string/capture_visual_style"
+            android:entries="@array/pref_captureVisualStyles_entries"
+            android:entryValues="@array/pref_captureVisualStyles_values"
+            android:title="@string/capture_visual_style" 
+            android:dependency="prefEnableTheaterMode" />
+        
+        <CheckBoxPreference
+            android:key="prefEnableWordDetectFeedback"
+            android:defaultValue="true"
+            android:title="@string/enable_word_detect_feedback" 
+            android:summary="@string/show_visual_hints_for_word_detection_mode"
+            android:dependency="prefEnableTheaterMode" />
+        
+        <CheckBoxPreference
+            android:key="prefDimNavigationButtons"
+            android:defaultValue="true"
+            android:title="@string/dim_navigation_buttons" 
+            android:summary="@string/you_still_need_to_press_the_back_button_to_finish_capture" 
+            android:dependency="prefEnableTheaterMode"/>
+        
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>
